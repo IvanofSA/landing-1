@@ -32,7 +32,7 @@ var
 		js : {
 			location    : 'app/js/main.js',
 			plugins     : 'app/js/_plugins/*.js',
-			destination : 'scripts'
+			destination : 'app/scripts'
 		},
 
 		browserSync : {

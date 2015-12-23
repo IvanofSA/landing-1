@@ -1,0 +1,85 @@
+.about-company{
+  background: rgba(204,204,204, 0.2);
+  padding-top: 113px;
+  padding-bottom: 73px;
+  width: 100%;
+  margin: 0 auto;
+  .line{
+    margin-bottom: 47px;
+  }
+  .header__title{
+        margin-bottom: 77px;
+  }
+}
+.skills__list{
+  margin-left: 162px;
+  margin-bottom: 26px;
+  &:after{
+    display: block;
+    content: '';
+    border-bottom: 1px dashed #ccc;
+    margin-top: 38px;
+    width: 950px;
+  }
+}
+// $skills:ready, audio, result, conditions;
+// @each $skill in $skills {
+.skills__item{
+      margin-left: 89px;
+      display: inline-block;
+      width: 168px;
+      height: 190px;
+      background: url('../img/skills/hexgen.png') no-repeat;
+
+      &:first-child{
+        margin-left: 0;
+      }
+  }
+  .skills__link{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 9px;
+    cursor:default;
+
+  }
+  .skills__link_ready{
+    @include sprite-image($ready);
+    background-repeat: no-repeat;
+    background-position: 40px -415px;
+  }
+  .skills__link_audio{
+    @include sprite-image($audio);
+    background-repeat: no-repeat;
+    background-position: 32px -565px;
+  }
+  .skills__link_result{
+    @include sprite-image($result);
+    background-repeat: no-repeat;
+    background-position: 37px -879px;
+  }
+  .skills__link_conditions{
+    @include sprite-image($conditions);
+    background-repeat: no-repeat;
+    background-position: 61px -712px;
+  }
+  .skills__text{
+    word-spacing: 100px;
+    color:#000;
+    font-family: 'helveticaneuecyrbold';
+    font-size: 18px;;
+    text-align: center;
+  }
+  .skills__text-space{
+    word-spacing: 0;
+  }
+  .about__company-text{
+    margin-left: 171px;
+    width: 955px;
+    p{
+      font-family: 'helveticaneuecyrroman';
+      font-size: 14px;
+      margin-bottom: 12px;
+      line-height: 1.45;
+    }
+  }

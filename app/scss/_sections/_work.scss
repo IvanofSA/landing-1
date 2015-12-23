@@ -1,0 +1,97 @@
+.work{
+  background: url('../img/background/bg-work.jpg') center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  height: 632px;
+  .container{
+    width: 1280px;
+  }
+  .line{
+    top: 170px;
+    left: 635px;
+  }
+  .skills__list-work{
+    margin-left: 158px;
+  }
+  .skills__item:first-child {
+    margin-left:9px;
+  }
+  .header__title{
+    color:#fff;
+    padding-top: 125px;
+    margin-bottom: 91px;
+    &:after{
+      top: 174px;
+    }
+  }
+  .work__wrap{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .skills__text{
+    word-spacing: 0px;
+    color:#fff;
+    width: 150px;
+    font-size: 17px;
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+    .skills__text-lengt{
+      width: 221px;
+      margin-left: -27px;
+    }
+}
+
+  .skills__list-work{
+    margin-left: 158px;
+    width: 100px;
+    float: left;
+  }
+  .skills__item-write{
+    @include sprite($work-write);
+    background-repeat: no-repeat;
+    &:after{
+      display: block;
+      position: absolute;
+      content: '';
+      width: 93px;
+      border-bottom: 2px solid #CC0000;
+      left: 332px;
+      top: 334px;
+    }
+  }
+  .skills__item-tell{
+    @include sprite($work-tell);
+    background-repeat: no-repeat;
+    &:after{
+      display: block;
+      position: absolute;
+      content: '';
+      width: 89px;
+      border-bottom: 2px solid #CC0000;
+      left: 594px;
+      top: 334px;
+    }
+  }
+  .skills__item-calc{
+    @include sprite($work-calc);
+    background-repeat: no-repeat;
+    &:after{
+      display: block;
+      position: absolute;
+      content: '';
+      width: 88px;
+      border-bottom: 2px solid #CC0000;
+      left: 854px;
+      top: 334px;
+
+    }
+  }
+  .skills__item-money{
+    @include sprite($work-money);
+    background-repeat: no-repeat;
+  }

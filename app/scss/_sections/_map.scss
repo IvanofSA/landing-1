@@ -1,0 +1,109 @@
+.contact{
+    width: 100%;
+    height: 604px;
+    position: relative;
+      .icon__application{
+          margin-left: 22px;
+      }
+      .catalog__email{
+        font-size: 17px;
+      }
+  }
+  // #map_canvas{
+  //   width: 1470px;
+  //   height: 100%;
+  // }
+  .map__form-wrap{
+    width: 380px;
+    height: 342px;
+    background: #cc0000;
+    position: absolute;
+    top: 118px;
+    right: 285px;
+    padding-top: 27px;
+    line-height: 1.3;
+  }
+  .consultation{
+    text-align: center;
+        margin-bottom: 16px;
+    p {
+    font-family: 'helveticaneuecyrbold';
+    font-size: 24px;
+    color:#fff;
+  }
+}
+  .consultation__form{
+    text-align: center;
+    .input{
+      width: 278px;
+      margin-bottom: 7px;
+    }
+    .btn{
+      width: 337px;
+    }
+  }
+
+
+
+
+
+///////////////////////////////////////
+
+
+
+#map-canvas {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    max-width: none;
+}
+#map-canvas img {
+    max-width: none!important;
+}
+// .gm-style-iw {
+//     width: 250px !important;
+//     top: 15px !important;
+//     left: 0px !important;
+//     background-color: #fff;
+//     //box-shadow: 0 1px 6px rgba(204, 0, 0, 0.6);
+//     border: 2px solid rgba(204, 0, 0, 0.6);
+// }
+// #iw-container {
+//     margin-bottom: 10px;
+// }
+// #iw-container .iw-title {
+//     font-family: 'helveticaneuecyrroman', sans-serif;
+//     font-size: 12px;
+//     font-weight: 400;
+//     padding: 10px;
+//     background-color: #48b5e9;
+//     color: white;
+//     margin: 0;
+//
+// }
+// #iw-container .iw-content {
+//     font-size: 13px;
+//     line-height: 18px;
+//     font-weight: 400;
+//     margin-right: 1px;
+//     padding: 15px 5px 20px 15px;
+//     max-height: 140px;
+//     overflow-y: auto;
+//     overflow-x: hidden;
+// }
+// .iw-content img {
+//     float: right;
+//     margin: 0 5px 5px 10px;
+// }
+// .iw-subTitle {
+//     font-size: 16px;
+//     font-weight: 700;
+//     padding: 5px 0;
+// }
+// .iw-bottom-gradient {
+//     position: absolute;
+//     width: 326px;
+//     height: 25px;
+//     bottom: 10px;
+//     right: 18px;
+//   }

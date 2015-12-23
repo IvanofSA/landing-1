@@ -1,0 +1,205 @@
+.offer{
+  width: 100%;
+  margin: 0 auto;
+  height: 701px;
+  padding-top: 101px;
+    position: relative;
+  img{
+    max-width: 100%;
+  }
+}
+.header__title{
+    font-family: 'helveticaneuecyrbold';
+    font-size: 38px;
+    color:#000;
+    text-align: center;
+    margin-bottom: 60px;
+    &:after{
+      display: block;
+      content: '';
+      width: 134px;
+      border-bottom: 1px solid #cc0000;
+      top: 48px;
+      left: 572px;
+      right: 0;
+      position: absolute;
+    }
+}
+.line{
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid #cc0000;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 31px;
+  top: 44px;
+  left: 634px;
+  background: #fff;
+}
+
+  .controls__tabs{
+    text-align: center;
+    margin-bottom: 44px;
+  }
+  .controls__tabs-item{
+    display: inline-block;
+    width: 310px;
+    background: rgb(241, 241, 241);
+    @include transition(top 1s ease-out 0.5s);
+      &:hover, &.active{
+        background:#cc0000;
+        .controls__tabs-link{
+          color:#fff;
+        }
+      }
+      &:active{
+        background:#cc0000;
+      }
+  }
+
+  .controls__tabs-link{
+    display: block;
+    font-family: 'helveticaneuecyrroman';
+    font-size: 14px;
+    text-decoration: none;
+    color:#666666;
+    padding: 18px 0 20px 0;
+    &:hover{
+      color:#fff;
+    }
+  }
+    .tabs__item{
+      display: none;
+      &.active{
+        display: block;
+        margin-left: 205px;
+        width: 943px;
+            margin: 0 auto;
+      }
+      // &:first-child{
+      //
+      // }
+      h2{
+        font-family: 'helveticaneuecyrbold';
+        font-size: 24px;
+        margin-bottom: 34px;
+      }
+      p{
+        font-family: 'helveticaneuecyrroman';
+        font-size: 18px;
+        width:100%;
+        text-align:justify;
+        margin-bottom: 31px;
+        line-height: 1.25;
+      }
+    }
+    .my__slider-img{
+      width: 50%;
+      float: left;
+      img{
+        max-width: 100%;
+        padding-top: 33px;
+        margin-left: 39px;
+      }
+    }
+    .my__slider-text{
+      width: 45%;
+      float: left;
+      margin-left: 30px;
+      ul{
+        list-style: decimal ;
+        font-family: 'helveticaneuecyrroman';
+        font-size: 16px;
+        margin-left: 53px;
+        margin-top: 69px;
+      }
+    }
+    .sliders{
+      position: relative;
+      display: inline-block;
+    //  margin-left: 200px;
+    }
+    .slider__wrap{
+      width: 905px;
+          height: 300px;
+      overflow: hidden;
+    }
+    .my__slider-list{
+      width: 4000px;
+      @include clearfix;
+      position: relative;
+      -webkit-transform: translatez(0);
+      -moz-transform: translatez(0);
+          -ms-transform: translatez(0);
+          -o-transform: translatez(0);
+          transform: translatez(0);
+      left: 0;
+    }
+    .my__sliders-item{
+      width: 905;
+      float: left;
+    }
+    .sliders__controls-buttons{
+      position: absolute;
+      top: 100px;
+    }
+    .sliders__controls-buttons-prev{
+      display: block;
+      left: 0px;
+      width: 35px;
+      height: 35px;
+      @include sprite-image($arrow-prev);
+      background-repeat: no-repeat;
+      background-position: 0 -371px;
+    }
+    .sliders__controls-buttons-next{
+      display: block;
+      right: -50px;
+      width: 35px;
+      height: 35px;
+      @include sprite-image($arrow-next);
+      background-repeat: no-repeat;
+      background-position: 0 -267px;
+    }
+    .height__img{
+      width: 30%;
+      img{
+        height: 306px;
+        padding-top: 0;
+      }
+    }
+    .width{
+
+    }
+    .height{
+      padding-top: 150px;
+      p{
+        width: 551px;
+        font-size: 16px;
+      }
+    }
+    .slider{
+      width: 100%;
+    }
+    .slider__list{
+      margin-bottom: 112px;
+    }
+    .slider__item{
+      width: 300px;
+      height: 193px;
+      display: inline-block;
+      margin-left: 17px;
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+    .slider__pic{
+      width: 100%;
+      height: 100%;
+    }
+    .slider__pic{
+      width: 300px;
+      height: 193px;
+    }

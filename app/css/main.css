@@ -1,0 +1,1079 @@
+/* --------- mixins --------- */
+/* --------- mixins --------- */
+/* --------- adjustment --------- */
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 100.01%; }
+
+body {
+  font: 100%/1.5em "helveticaneuecyrlight", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  height: 100%; }
+
+.container {
+  min-width: 1280px;
+  width: 1280px;
+  margin: 0 auto;
+  position: relative; }
+  .container:before, .container:after {
+    content: "";
+    display: table; }
+  .container:after {
+    clear: both; }
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  overflow: hidden;
+  min-width: 1350px;
+  background: #ffffff;
+  margin: 0 auto; }
+  .wrapper:after {
+    display: block;
+    position: relative;
+    height: 50px; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none outside none; }
+  ul li {
+    padding: 0;
+    left: 0; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+footer {
+  position: relative;
+  height: 50px; }
+
+.has-error {
+  border-color: #f97e76 !important;
+  background: #ffcfcc !important; }
+
+.qtip-red {
+  padding: 2px 0;
+  border-color: #fff;
+  font-size: 12px;
+  background: #990000;
+  color: #fff;
+  box-shadow: inset 1px 1px 0 #f7c0ad;
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 0.5px 0.5px;
+  color: #9a4e32; }
+
+.qtip-content {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'helveticaneuecyrroman'; }
+
+.qtip-default {
+  background-color: #e48e70; }
+
+.myStyle.qtip-pos-tl {
+  color: red; }
+
+.popup {
+  display: none;
+  position: relative;
+  width: 433px;
+  height: 300px;
+  background: #fff;
+  border: 3px solid #ff0000;
+  padding-top: 40px;
+  margin: 0 auto; }
+  .popup .line {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #cc0000;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 31px;
+    top: 91px;
+    left: 212px;
+    background: #fff; }
+  .popup .input {
+    width: 290px;
+    margin-left: 1px;
+    margin-bottom: 6px; }
+  .popup .btn {
+    width: 350px;
+    height: 60px;
+    font-family: 'helveticaneuecyrmedium';
+    font-size: 18px; }
+  .popup .icon__application {
+    left: 43px; }
+
+.call__name {
+  background-image: url("../img/sprites/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 10px 10px; }
+
+.call__phone {
+  background-image: url("../img/sprites/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 10px -167px; }
+
+.call__title {
+  text-align: center;
+  margin-bottom: 85px; }
+  .call__title:after {
+    display: block;
+    content: '';
+    width: 164px;
+    border-bottom: 2px solid #cc0000;
+    top: 96px;
+    left: 136px;
+    right: 0;
+    position: absolute; }
+
+.call__text {
+  font-family: 'helveticaneuecyrbold';
+  font-size: 24px;
+  color: #000; }
+
+.b-close {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 15px;
+  top: 15px; }
+
+.call__form {
+  text-align: center; }
+
+.b-close {
+  font-family: 'helveticaneuecyrbold';
+  font-size: 18px;
+  color: #ccc;
+  cursor: pointer; }
+
+/* --------- sections --------- */
+.header {
+  width: 100%;
+  height: 101px;
+  overflow: hidden;
+  position: relative; }
+  .header:before, .header:after {
+    content: "";
+    display: table; }
+  .header:after {
+    clear: both; }
+  .header .container {
+    z-index: 1; }
+
+.logo__wrap {
+  float: left;
+  width: 434px;
+  margin-left: -35px;
+  background: #cc0000;
+  height: 101px; }
+  .logo__wrap:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50px;
+    left: 330px;
+    -webkit-transform: scale(1, 1.5) rotate(45deg);
+    -moz-transform: scale(1, 1.5) rotate(45deg);
+    -ms-transform: scale(1, 1.5) rotate(45deg);
+    transform: scale(1, 1.7) rotate(63deg);
+    background: #cc0000;
+    width: 100px;
+    height: 100px; }
+
+.bg__helper {
+  width: 32%;
+  height: 100%;
+  float: left;
+  background: #cc0000;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.logo {
+  display: block;
+  width: 192px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  margin-left: 122px; }
+
+.logo__img {
+  width: 100%; }
+
+.logo__text {
+  position: absolute;
+  top: 0;
+  left: -9999px; }
+
+.middle__wrap {
+  float: left; }
+
+.callback__btn {
+  display: block;
+  width: 170px;
+  height: 23px;
+  margin-top: 12px;
+  border: 2px solid #cc0000;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  font-family: 'helveticaneuecyrroman';
+  font-size: 14px;
+  margin-bottom: 18px;
+  margin-left: 263px; }
+  .callback__btn:hover {
+    color: #990000;
+    outline: 1px solid #cccccc; }
+  .callback__btn:active {
+    color: #990000;
+    -webkit-box-shadow: 1px 1px 14px #990000;
+    -moz-box-shadow: 1px 1px 14px #990000;
+    box-shadow: 1px 1px 14px #990000; }
+
+.navigation__menu {
+  margin: auto 0; }
+
+.naviagtion__menu__list {
+  margin-left: 70px; }
+
+.naviagtion__menu__item {
+  display: inline-block;
+  margin-left: 37px; }
+  .naviagtion__menu__item:first-child {
+    margin-left: 0; }
+
+.naviagtion__menu__link {
+  text-decoration: none;
+  font-family: 'helveticaneuecyrmedium';
+  font-size: 18px;
+  color: #000; }
+  .naviagtion__menu__link:hover {
+    color: #990000; }
+
+.contacts {
+  float: left; }
+
+.contacts__phone-wrap {
+  width: 100%;
+  padding-top: 16px;
+  margin-left: 50px; }
+
+.contacts__phone {
+  font-family: 'helveticaneuecyrbold';
+  font-size: 24px;
+  color: #333;
+  text-transform: none; }
+
+.contacts__map-wrap {
+  width: 100%;
+  margin-top: -25px;
+  margin-left: 50px; }
+
+.contacts__map {
+  font-family: 'helveticaneuecyrlight';
+  font-size: 18px;
+  color: #333;
+  text-transform: none;
+  white-space: pre-line; }
+
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+.application {
+  width: 100%;
+  margin: 0 auto;
+  background: #cc0000;
+  height: 699px;
+  position: relative; }
+  .application .container {
+    z-index: 1; }
+  .application .bg__helper {
+    width: 44%;
+    height: 100%;
+    float: left;
+    background: url("../img/background/application-background.png") 0 0 no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.hero__title-wrap {
+  float: left;
+  width: 780px;
+  height: 699px;
+  margin-left: -35px;
+  background: url("../img/background/application-background.png") 0 0 no-repeat; }
+
+.title_wrap {
+  margin-top: 149px; }
+
+.application__wrap {
+  float: left;
+  margin-top: 172px;
+  margin-left: 50px;
+  width: 395px;
+  height: 320px;
+  background: #cc0000; }
+
+.application__title {
+  margin-bottom: 34px; }
+
+.application__title-text {
+  font-family: 'helveticaneuecyrroman';
+  font-size: 32.05px;
+  margin-bottom: 12px;
+  color: #fff; }
+
+.application__title-text_bold {
+  font-family: 'helveticaneuecyrblack';
+  font-size: 32.05px;
+  color: #fff;
+  margin-bottom: 54px; }
+
+.application__form {
+  margin-left: 19px; }
+
+.input {
+  width: 289px;
+  height: 36px;
+  padding-left: 57px;
+  margin-bottom: 6px;
+  border: #990000 1px solid;
+  outline: none; }
+
+.application__name {
+  background-image: url("../img/sprites/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 10px 10px; }
+
+.icon__application {
+  width: 38px;
+  height: 38px;
+  background: #cccccc;
+  position: absolute;
+  border: 1px solid #990000;
+  border-right: none;
+  opacity: 0.2; }
+
+.application__phone {
+  margin-bottom: -5px;
+  background-image: url("../img/sprites/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 10px -167px; }
+
+.text__form {
+  font-family: 'helveticaneuecyritalic';
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 11px;
+  margin-left: 3px; }
+
+.btn {
+  width: 348px;
+  height: 65px;
+  font-family: 'helveticaneuecyrbold';
+  font-size: 21px;
+  color: #fff;
+  background: #990000;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.35), inset 1px 1px 0px 0px rgba(241, 241, 241, 0.5); }
+  .btn:hover, .btn:focus {
+    background: rgba(152, 0, 0, 0.6);
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.35), inset 0px 1px 0px 0px rgba(241, 241, 241, 0.5); }
+
+.hero__title-big {
+  margin-left: 113px;
+  font-family: 'helveticaneuecyrbold';
+  font-size: 49px;
+  color: #fff;
+  white-space: pre-line;
+  margin-bottom: 46px;
+  line-height: 1.3; }
+
+.hero__title-little {
+  margin-left: 113px;
+  display: inline-block;
+  font-family: 'helveticaneuecyrbold';
+  font-size: 37.02px;
+  color: #fff; }
+
+.offer {
+  width: 100%;
+  margin: 0 auto;
+  height: 701px;
+  padding-top: 101px;
+  position: relative; }
+  .offer img {
+    max-width: 100%; }
+
+.header__title {
+  font-family: 'helveticaneuecyrbold';
+  font-size: 38px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 60px; }
+  .header__title:after {
+    display: block;
+    content: '';
+    width: 134px;
+    border-bottom: 1px solid #cc0000;
+    top: 48px;
+    left: 572px;
+    right: 0;
+    position: absolute; }
+
+.line {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid #cc0000;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 31px;
+  top: 44px;
+  left: 634px;
+  background: #fff; }
+
+.controls__tabs {
+  text-align: center;
+  margin-bottom: 44px; }
+
+.controls__tabs-item {
+  display: inline-block;
+  width: 310px;
+  background: #f1f1f1;
+  -webkit-transition: top 1s ease-out 0.5s;
+  -moz-transition: top 1s ease-out 0.5s;
+  -ms-transition: top 1s ease-out 0.5s;
+  -o-transition: top 1s ease-out 0.5s;
+  transition: top 1s ease-out 0.5s; }
+  .controls__tabs-item:hover, .controls__tabs-item.active {
+    background: #cc0000; }
+    .controls__tabs-item:hover .controls__tabs-link, .controls__tabs-item.active .controls__tabs-link {
+      color: #fff; }
+  .controls__tabs-item:active {
+    background: #cc0000; }
+
+.controls__tabs-link {
+  display: block;
+  font-family: 'helveticaneuecyrroman';
+  font-size: 14px;
+  text-decoration: none;
+  color: #666666;
+  padding: 18px 0 20px 0; }
+  .controls__tabs-link:hover {
+    color: #fff; }
+
+.tabs__item {
+  display: none; }
+  .tabs__item.active {
+    display: block;
+    margin-left: 205px;
+    width: 943px;
+    margin: 0 auto; }
+  .tabs__item h2 {
+    font-family: 'helveticaneuecyrbold';
+    font-size: 24px;
+    margin-bottom: 34px; }
+  .tabs__item p {
+    font-family: 'helveticaneuecyrroman';
+    font-size: 18px;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 31px;
+    line-height: 1.25; }
+
+.my__slider-img {
+  width: 50%;
+  float: left; }
+  .my__slider-img img {
+    max-width: 100%;
+    padding-top: 33px;
+    margin-left: 39px; }
+
+.my__slider-text {
+  width: 45%;
+  float: left;
+  margin-left: 30px; }
+  .my__slider-text ul {
+    list-style: decimal;
+    font-family: 'helveticaneuecyrroman';
+    font-size: 16px;
+    margin-left: 53px;
+    margin-top: 69px; }
+
+.sliders {
+  position: relative;
+  display: inline-block; }
+
+.slider__wrap {
+  width: 905px;
+  height: 300px;
+  overflow: hidden; }
+
+.my__slider-list {
+  width: 4000px;
+  position: relative;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+  left: 0; }
+  .my__slider-list:before, .my__slider-list:after {
+    content: "";
+    display: table; }
+  .my__slider-list:after {
+    clear: both; }
+
+.my__sliders-item {
+  width: 905;
+  float: left; }
+
+.sliders__controls-buttons {
+  position: absolute;
+  top: 100px; }
+
+.sliders__controls-buttons-prev {
+  display: block;
+  left: 0px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/sprites/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 -371px; }
+
+.sliders__controls-buttons-next {
+  display: block;
+  right: -50px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/sprites/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 -267px; }
+
+.height__img {
+  width: 30%; }
+  .height__img img {
+    height: 306px;
+    padding-top: 0; }
+
+.height {
+  padding-top: 150px; }
+  .height p {
+    width: 551px;
+    font-size: 16px; }
+
+.slider {
+  width: 100%; }
+
+.slider__list {
+  margin-bottom: 112px; }
+
+.slider__item {
+  width: 300px;
+  height: 193px;
+  display: inline-block;
+  margin-left: 17px; }
+  .slider__item:first-child {
+    margin-left: 0; }
+
+.slider__pic {
+  width: 100%;
+  height: 100%; }
+
+.slider__pic {
+  width: 300px;
+  height: 193px; }
+
+.catalog {
+  width: 100%;
+  background: url("../img/background/bg-catalog.png") center center no-repeat;
+  height: 654px;
+  margin: 0 auto;
+  background-size: cover;
+  width: 100%; }
+
+.catalog__wrap {
+  position: absolute;
+  left: 662px;
+  top: 139px;
+  width: 314px;
+  border: 1px solid #990000;
+  padding: 39px 36px 30px 28px;
+  background: #cc0000;
+  color: #fff;
+  font-family: 'helveticaneuecyrlight';
+  font-size: 24px;
+  text-align: center; }
+
+.catalog__email {
+  width: 264px;
+  color: #000;
+  font-size: 17px;
+  background-image: url("../img/sprites/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 8px -77px;
+  margin-bottom: 12px; }
+
+.catalog__btn {
+  width: 324px;
+  padding-left: 29px; }
+
+.catalog__text-wrap {
+  margin-left: 13px; }
+
+.catalog__text-title {
+  margin-bottom: 2px; }
+
+.catalog__text-bold {
+  font-family: 'helveticaneuecyrbold';
+  line-height: 1.3;
+  margin-bottom: 22px; }
+
+.catalog__text-little {
+  font-family: 'helveticaneuecyrlight';
+  font-size: 17px;
+  width: 250px;
+  margin: auto;
+  margin-bottom: 23px; }
+
+.hands {
+  background: url("../img/background/hands.png") no-repeat;
+  width: 572px;
+  height: 572px;
+  position: absolute;
+  top: 95px;
+  left: -79px; }
+
+.materials {
+  margin-bottom: 124px;
+  padding-top: 124px; }
+  .materials .controls__tabs {
+    margin-bottom: 33px; }
+  .materials .controls__tabs-item {
+    width: 185px; }
+  .materials .line {
+    top: 44px;
+    left: 636px; }
+  .materials .header__title {
+    margin-bottom: 73px; }
+
+.materials__img-wrap {
+  height: 416px;
+  width: 460px;
+  float: left; }
+
+.materials__img {
+  width: 100%;
+  height: 100%; }
+
+.materials__text-wrap {
+  margin-left: 10px;
+  float: right;
+  width: 467px; }
+  .materials__text-wrap h2 {
+    margin-top: 0;
+    margin-bottom: 28px; }
+  .materials__text-wrap p {
+    font-size: 14px;
+    line-height: 1.45;
+    margin-bottom: 41px; }
+
+.about-company {
+  background: rgba(204, 204, 204, 0.2);
+  padding-top: 113px;
+  padding-bottom: 73px;
+  width: 100%;
+  margin: 0 auto; }
+  .about-company .line {
+    margin-bottom: 47px; }
+  .about-company .header__title {
+    margin-bottom: 77px; }
+
+.skills__list {
+  margin-left: 162px;
+  margin-bottom: 26px; }
+  .skills__list:after {
+    display: block;
+    content: '';
+    border-bottom: 1px dashed #ccc;
+    margin-top: 38px;
+    width: 950px; }
+
+.skills__item {
+  margin-left: 89px;
+  display: inline-block;
+  width: 168px;
+  height: 190px;
+  background: url("../img/skills/hexgen.png") no-repeat; }
+  .skills__item:first-child {
+    margin-left: 0; }
+
+.skills__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 9px;
+  cursor: default; }
+
+.skills__link_ready {
+  background-image: url("../img/sprites/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 40px -415px; }
+
+.skills__link_audio {
+  background-image: url("../img/sprites/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 32px -565px; }
+
+.skills__link_result {
+  background-image: url("../img/sprites/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 37px -879px; }
+
+.skills__link_conditions {
+  background-image: url("../img/sprites/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 61px -712px; }
+
+.skills__text {
+  word-spacing: 100px;
+  color: #000;
+  font-family: 'helveticaneuecyrbold';
+  font-size: 18px;
+  text-align: center; }
+
+.skills__text-space {
+  word-spacing: 0; }
+
+.about__company-text {
+  margin-left: 171px;
+  width: 955px; }
+  .about__company-text p {
+    font-family: 'helveticaneuecyrroman';
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.45; }
+
+.work {
+  background: url("../img/background/bg-work.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  height: 632px; }
+  .work .container {
+    width: 1280px; }
+  .work .line {
+    top: 170px;
+    left: 635px; }
+  .work .skills__list-work {
+    margin-left: 158px; }
+  .work .skills__item:first-child {
+    margin-left: 9px; }
+  .work .header__title {
+    color: #fff;
+    padding-top: 125px;
+    margin-bottom: 91px; }
+    .work .header__title:after {
+      top: 174px; }
+  .work .work__wrap {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; }
+  .work .skills__text {
+    word-spacing: 0px;
+    color: #fff;
+    width: 150px;
+    font-size: 17px;
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 10px; }
+  .work .skills__text-lengt {
+    width: 221px;
+    margin-left: -27px; }
+
+.skills__list-work {
+  margin-left: 158px;
+  width: 100px;
+  float: left; }
+
+.skills__item-write {
+  background-image: url("../img/sprites/sprite.png");
+  background-position: 0px -1865px;
+  width: 165px;
+  height: 187px;
+  background-repeat: no-repeat; }
+  .skills__item-write:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 93px;
+    border-bottom: 2px solid #CC0000;
+    left: 332px;
+    top: 334px; }
+
+.skills__item-tell {
+  background-image: url("../img/sprites/sprite.png");
+  background-position: 0px -1608px;
+  width: 170px;
+  height: 187px;
+  background-repeat: no-repeat; }
+  .skills__item-tell:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 89px;
+    border-bottom: 2px solid #CC0000;
+    left: 594px;
+    top: 334px; }
+
+.skills__item-calc {
+  background-image: url("../img/sprites/sprite.png");
+  background-position: 0px -1351px;
+  width: 171px;
+  height: 187px;
+  background-repeat: no-repeat; }
+  .skills__item-calc:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 88px;
+    border-bottom: 2px solid #CC0000;
+    left: 854px;
+    top: 334px; }
+
+.skills__item-money {
+  background-image: url("../img/sprites/sprite.png");
+  background-position: 0px -1095px;
+  width: 165px;
+  height: 186px;
+  background-repeat: no-repeat; }
+
+.contact {
+  width: 100%;
+  height: 604px;
+  position: relative; }
+  .contact .icon__application {
+    margin-left: 22px; }
+  .contact .catalog__email {
+    font-size: 17px; }
+
+.map__form-wrap {
+  width: 380px;
+  height: 342px;
+  background: #cc0000;
+  position: absolute;
+  top: 118px;
+  right: 285px;
+  padding-top: 27px;
+  line-height: 1.3; }
+
+.consultation {
+  text-align: center;
+  margin-bottom: 16px; }
+  .consultation p {
+    font-family: 'helveticaneuecyrbold';
+    font-size: 24px;
+    color: #fff; }
+
+.consultation__form {
+  text-align: center; }
+  .consultation__form .input {
+    width: 278px;
+    margin-bottom: 7px; }
+  .consultation__form .btn {
+    width: 337px; }
+
+#map-canvas {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  max-width: none; }
+
+#map-canvas img {
+  max-width: none !important; }
+
+.footer {
+  width: 100%;
+  height: 108px;
+  background: #333; }
+  .footer .logo {
+    display: block;
+    width: 95px;
+    height: 64px;
+    padding-bottom: 6px;
+    margin-left: 169px;
+    padding-top: 24px; }
+  .footer .logo__img {
+    width: 100%; }
+  .footer .logo__text {
+    position: absolute;
+    top: 0;
+    left: -9999px; }
+
+.logo__wrap-footer {
+  float: left;
+  width: 332px; }
+
+.contact__wrap {
+  float: left;
+  width: 420px; }
+
+.contacts__footer {
+  width: 100%;
+  padding-top: 21px;
+  margin-bottom: 0px; }
+
+.contacts__map-footer {
+  font-family: 'helveticaneuecyrroman';
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none; }
+
+.contacts__phone-footer {
+  font-family: 'helveticaneuecyrroman';
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none; }
+
+.map {
+  display: inline-block;
+  width: 230px; }
+
+.phone-map__wrap {
+  width: 150px;
+  display: inline-block;
+  margin-left: 5px; }
+
+.contact_email-footer {
+  color: #ff0000;
+  font-family: 'helveticaneuecyrroman';
+  font-size: 14px; }
+
+.copyright {
+  font-family: 'helveticaneuecyrroman';
+  font-size: 14px;
+  color: #999;
+  width: 425px; }
+
+.logo__loft {
+  float: left;
+  font-family: 'helveticaneuecyrroman';
+  font-size: 14px;
+  color: #999;
+  margin-left: 239px;
+  padding-top: 13px; }
+
+.logo__loft-link {
+  display: block;
+  padding-top: 8px;
+  margin-left: 66px; }
+
+/* --------- sprites --------- */
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/

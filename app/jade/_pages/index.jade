@@ -1,0 +1,262 @@
+extends ../main
+block title
+  | STP Box
+block content
+  header.header
+    .bg__helper
+    .container
+      .logo__wrap
+        a(href="#").logo
+          img(src="app/img/logo.png" alt="STP Box logo").logo__img
+          .logo__text spak
+      .middle__wrap
+        .callback
+          a(href="#").callback__btn Обратный звонок
+        nav.navigation__menu
+          ul.naviagtion__menu__list
+              li.naviagtion__menu__item
+                a(href="#offer").naviagtion__menu__link УСЛУГИ
+              li.naviagtion__menu__item
+                a(href="#materials").naviagtion__menu__link МАТЕРИАЛЫ
+              li.naviagtion__menu__item
+                a(href="#contact").naviagtion__menu__link КОНТАКТЫ
+      .contacts
+        .contacts__phone-wrap
+          a(href="tel:+78126003202").contacts__phone +7 (812) 600-32-02 
+        .contacts__map-wrap  
+          a(href="maps:ll=59.893520, 30.449034").contacts__map  Санкт-Петербург,
+            |Октябрьская набережная, дом 44
+  section.application 
+    .bg__helper
+    .container
+      .hero__title-wrap
+        .title_wrap
+          .hero__title
+            h1.hero__title-big СОВРЕМЕННЫЕ РЕШЕНИЯ В ОБЛАСТИ ШУМОИЗОЛЯЦИИ
+          .hero__title-little Эффективно и в срок!
+      .application__wrap
+        .application__title
+          p.application__title-text Оставьте заявку на сайте 
+          p.application__title-text_bold и получите скидку 5%
+        form(method="" class="application__form" id="application" name="application")
+          .icon__application
+          input(type="name" name="name" placeholder="Ваше имя" qtip-position="right" qtip-content="Введите имя" class="application__name input")
+          .icon__application
+          input(type="tel" name="phone" placeholder="Ваш телефон" qtip-position="right" qtip-content="Введите телефон" class="application__phone input phone")
+          p.text__form Ваши данные остаются строго конфиденциальными
+          input(type="submit" class="application__btn btn" value="Отправить заявку")
+  section.offer#offer
+    .container
+      .header__title  МЫ ПРЕДЛАГАЕМ
+      .line
+      .tabs
+      ul.controls__tabs
+        li(data-class="first").controls__tabs-item.active
+          a(href="#").controls__tabs-link Акустическая коррекция 
+        li(data-class="second").controls__tabs-item
+          a(href="#").controls__tabs-link Архитектурная звукоизоляция
+        li(data-class="third").controls__tabs-item
+          a(href="#").controls__tabs-link Системы шумоизоляции
+      ul.tabs__list
+        li.tabs__item.tabs__item_first.active
+          h2 Акустическая коррекция
+          p Не следует, однако забывать, что рамки и место обучения кадров играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет оценить значение направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности способствует подготовки и реализации направлений прогрессивного развития.  
+          .slider
+            ul.slider__list
+              li.slider__item.active
+                img(src="app/img/materials/materials3.jpg" alt="materials" class="slider__pic")
+              li.slider__item 
+                img(src="app/img/materials/materials2.jpg" alt="materials" class="slider__pic")
+              li.slider__item 
+                  img(src="app/img/materials/materials1.jpg" alt="materials" class="slider__pic")
+        li.tabs__item.tabs__item_second
+          h2 Архитектурная звукоизоляция
+          p Не следует, однако забывать, что рамки и место обучения кадров играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет оценить значение направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности способствует подготовки и реализации направлений прогрессивного развития.  
+          .slider
+            ul.slider__list
+              li.slider__item.active
+                img(src="app/img/materials/materials1.jpg" alt="materials" class="slider__pic")
+              li.slider__item 
+                img(src="app/img/materials/materials2.jpg" alt="materials" class="slider__pic")
+              li.slider__item 
+                img(src="app/img/materials/materials3.jpg" alt="materials" class="slider__pic")
+        li.tabs__item.tabs__item_third
+          h2 Системы шумоизоляции
+          .sliders
+            .slider__wrap
+              ul.my__slider-list
+                li.my__sliders-item.active
+                  .my__slider-img.width__img
+                    img(src="app/img/slider/materials-shum4.png" alt="materials" class="sliders__pic" ) 
+                  .my__slider-text.width
+                    ul
+                      li Surdo TM profile (50% эффекта)
+                      li NoiseBlock panel (noiseBlock Panellite) (15% эффекта)
+                      li NoiseBlock (35% эффекта)
+                      li Традиционно используемые материалы
+                      li Плитка перекрытия
+                li.my__sliders-item
+                  .my__slider-img.height__img
+                    img(src="app/img/slider/materials-shum12.png" alt="materials" class="sliders__pic" ) 
+                  .my__slider-text.height
+                    p Традиционно используемые материалы (ГКЛ, ГВЛ, фанера и др.) 
+                li.my__sliders-item
+                  .my__slider-img.height__img
+                    img(src="app/img/slider/materials-shum13.png" alt="materials" class="sliders__pic" ) 
+                  .my__slider-text.height
+                    p Традиционно используемые материалы (ГКЛ, ГВЛ, фанера и др.)   
+                li.my__sliders-item
+                  .my__slider-img.width__img
+                    img(src="app/img/slider/materials-shum11.png" alt="materials" class="sliders__pic" ) 
+                  .my__slider-text.width
+                    ul
+                      li PolyBlock 3 мм
+                      li PolyBlock 30 мм
+                      li Стяжка
+                      li Плиты перекрытия
+                      li Плитка перекрытия
+            .sliders__controls
+              a(href="#").sliders__controls-buttons.sliders__controls-buttons-prev
+              a(href="#").sliders__controls-buttons.sliders__controls-buttons-next 
+  section.catalog
+    .container
+      .hands
+      .catalog__wrap 
+        .catalog__text-wrap
+          p.catalog__text-title Одним простым действием
+          p.catalog__text-bold  вы можете получить прайс-лист и каталог
+          p.catalog__text-little  Для этого заполните поле и нажмите отправить
+        form(method="" id="catalog__send" class="catalog__form" name="catalog")
+          .icon__application
+          input(type="email" class="catalog__email input" name="email" placeholder="Ваш email" qtip-position="right" qtip-content="Введите email")
+          input(type="submit" class="catalog__btn btn" value="Отправить заявку")
+  section.materials#materials
+    .container
+      .header__title УНИКАЛЬНЫЕ МАТЕРИАЛЫ
+      .line
+      .tabs
+      ul.controls__tabs
+        li(data-class="fourh").controls.controls__tabs-item.active
+          a(href="#" ).controls__tabs-link Crystal Sound Base
+        li(data-class="five").controls.controls__tabs-item
+          a(href="#" ).controls__tabs-link Surdo profile
+        li(data-class="six").controls.controls__tabs-item
+          a(href="#" ).controls__tabs-link Noiseblock
+        li(data-class="seven").controls.controls__tabs-item
+          a(href="#" ).controls__tabs-link Noiseblock Panel
+        li(data-class="eight").controls.controls__tabs-item
+          a(href="#").controls__tabs-link PolyBlock
+      ul.tabs__list
+        li.tabs__item.tabs__item_fourh.active
+          .materials__img-wrap
+            img(src="app/img/materials/materials4.jpg" alt="materials").materials__img
+          .materials__text-wrap
+            h2 Crystal Sound Base
+            p С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Равным образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же сложившаяся структура организации требуют определения и уточнения новых предложений. 
+            p Повседневная практика показывает, что рамки и место обучения кадров позволяет оценить значение форм развития. Таким образом постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции играет важную роль в формировании новых предложений.
+        li.tabs__item.tabs__item_five
+          .materials__img-wrap
+            img(src="app/img/materials/materials4.jpg" alt="materials").materials__img
+          .materials__text-wrap
+            h2 Surdo profile
+            p С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Равным образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же сложившаяся структура организации требуют определения и уточнения новых предложений. Повседневная практика показывает, что рамки и место обучения кадров позволяет оценить значение форм развития. Таким образом постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции играет важную роль в формировании новых предложений.
+        li.tabs__item.tabs__item_six
+          .materials__img-wrap
+            img(src="app/img/materials/materials4.jpg" alt="materials").materials__img
+          .materials__text-wrap
+            h2 Noiseblock
+            p С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Равным образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же сложившаяся структура организации требуют определения и уточнения новых предложений. Повседневная практика показывает, что рамки и место обучения кадров позволяет оценить значение форм развития. Таким образом постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции играет важную роль в формировании новых предложений.  
+        li.tabs__item.tabs__item_seven
+          .materials__img-wrap
+            img(src="app/img/materials/materials4.jpg" alt="materials").materials__img
+          .materials__text-wrap
+            h2 Noiseblock Panel
+            p С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Равным образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же сложившаяся структура организации требуют определения и уточнения новых предложений. Повседневная практика показывает, что рамки и место обучения кадров позволяет оценить значение форм развития. Таким образом постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции играет важную роль в формировании новых предложений. 
+        li.tabs__item.tabs__item_eight
+          .materials__img-wrap
+            img(src="app/img/materials/materials4.jpg" alt="materials").materials__img
+          .materials__text-wrap
+            h2 PolyBlock
+            p С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Равным образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же сложившаяся структура организации требуют определения и уточнения новых предложений. Повседневная практика показывает, что рамки и место обучения кадров позволяет оценить значение форм развития. Таким образом постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции играет важную роль в формировании новых предложений.
+  section.about-company
+    .container
+      .header__title ПРЕИМУЩЕСТВА КОМПАНИИ STANDARTPLAST
+      .line
+      ul.skills__list
+        li.skills__item 
+          a(href="#").skills__link.skills__link_ready
+          .skills__text Готовые решения
+        li.skills__item
+          a(href="#").skills__link.skills__link_audio
+          .skills__text Аккустическая коррекция
+        li.skills__item
+          a(href="#").skills__link.skills__link_result
+          .skills__text 100% результат
+        li.skills__item
+          a(href="#").skills__link.skills__link_conditions
+          .skills__text.skills__text-space Отличные условия для партнеров
+      .about__company-text
+        p Группа компаний «Стандартпласт» основана в 1996 году. Тогда мы были пионерами российского рынка шумоизоляции, теперь — мы успешная компания, имеющая отличную репутацию во всем мире. 
+        p "Стандартпласт" является поставщиком Volkswagen, Ford, Nissan, ГАЗа, АвтоВАЗа, Тагаза (Hyundai), ЛиАЗа, ПАЗа, МАЗа и других машиностроительных заводов. Мы участвуем в разработке шумоизоляционных решений для поездов, самолетов и кораблей.
+        p Мы предлагаем  архитектурную шумоизоляцию и уверены в наших решениях. Эффективность наших материалов подтверждена специалистами нашей аккредитованной вибро-акустической лаборатории, не имеющей аналогов в России.
+  section.work
+    .container
+      .header__title КАК МЫ РАБОТАЕМ
+      .line
+      .work__wrap
+        .skills__list-work
+          .skills__item.skills__item-write
+          p.skills__text Заявка
+        .skills__list-work
+          .skills__item.skills__item-tell
+          p.skills__text Консультация по акустике
+        .skills__list-work
+          .skills__item.skills__item-calc
+          p.skills__text Расчет создания проекта
+        .skills__list-work
+          .skills__item.skills__item-money
+          p.skills__text.skills__text-lengt Продаж и рекоминдация по монтажу
+  section.contact#contact
+    #map-canvas
+    .map__form-wrap
+      .consultation   
+        p Заполните заявку 
+        p И получите бесплатную консультацию
+      form(method="" class="consultation__form" name="consultation" id="consultation")
+        .icon__application
+        input(type="name" name="name" placeholder="Ваше имя" class="application__name input" qtip-position="right" qtip-content="Введите имя")
+        .icon__application
+        input(type="email" name="email" placeholder="Ваш email" class="catalog__email input" qtip-position="right" qtip-content="Введите email")
+        .icon__application
+        input(type="tel" name="phone" placeholder="Ваш телефон" class="phone application__phone input" qtip-position="right" qtip-content="Введите телефон")
+        input(type="submit" class="consultation__btn btn" value="Отправить заявку")
+  .popup
+    .call__title
+      p.call__text Заказать обратный звонок 
+      .line
+    form(method="" id="feedback-form" class="call__form")
+      .b-close X
+      .icon__application
+      input(type="name" name="name" placeholder="Ваше имя" qtip-position="right" qtip-content="Введите имя" class="call__name input")
+      .icon__application
+      input(type="tel" name="phone" placeholder="Ваш телефон" qtip-position="right" qtip-content="Введите телефон" class="phone call__phone input")
+      input(type="submit" class="application__btn btn" value="Заказать звонок")
+  footer.footer
+    .container
+      .logo__wrap-footer
+        a(href="#").logo
+          img(src="app/img/logo-footer.png" alt="spak logo").logo__img
+        .logo__text STPbox logo
+      .contact__wrap  
+        .contacts__footer
+          .map
+            a(href="maps:ll=59.893520, 30.449034").contacts__map-footer  Россия, Санкт-Петербург, Октябрьская набережная, дом 44
+          .phone-map__wrap  
+            .phone
+              a(href="tel:+78126003202").contacts__phone-footer +7(812)600-32-02 
+            .email  
+            a(href="mailto:stpspb@mail.ru").contact_email-footer stpspb@mail.ru
+        .copyright  © 2015, все права защищены. ООО "СТАНДАРТПЛАСТ ПЛЮС"
+      .logo__loft Разработка сайта:  
+         a(href="http://itloft.ru/").logo__loft-link
+           img(src="app/img/logo-itlof.png" alt="spak logo").logo__loft-img

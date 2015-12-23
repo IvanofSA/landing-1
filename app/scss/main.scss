@@ -1,0 +1,22 @@
+/* --------- mixins --------- */
+
+@import "_misc/_mixins";
+
+/* --------- adjustment --------- */
+
+@import "_misc/_adjustment";
+
+/* --------- sections --------- */
+
+@import "_sections/_header";
+@import "_sections/_application";
+@import "_sections/_offer";
+@import "_sections/_catalog";
+@import "_sections/_materials";
+@import "_sections/_about-company";
+@import "_sections/_work";
+@import "_sections/_map";
+@import "_sections/_footer";
+/* --------- sprites --------- */
+
+@import "../img/sprites/_sprite";

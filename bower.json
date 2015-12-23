@@ -1,0 +1,11 @@
+{
+  "name": "stpbox",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "normalize-css": "normalize.css#~3.0.3",
+    "qtip2": "~2.2.1",
+    "bPopup": "bpopup#~0.11.0",
+    "modernizr": "2.8.3"
+  }
+}
